@@ -1,0 +1,154 @@
+.movie_card {
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie_card:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.movie_poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie_details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+}
+
+.movie_card:hover .movie_details {
+  opacity: 1;
+}
+
+.movie_details_heading {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.movie_details_data {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.movie_data_rate {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: gold;
+}
+
+.movie_description {
+  font-size: 14px;
+  font-style: italic;
+  color: #ccc;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 992px) {
+  .movie_card {
+    width: 220px;
+    height: 330px;
+    margin: 15px;
+  }
+
+  .movie_details_heading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .movie_card {
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+  }
+
+  .movie_details {
+    padding: 10px;
+    height: 45%;
+  }
+
+  .movie_details_heading {
+    font-size: 18px;
+  }
+
+  .movie_data_rate,
+  .movie_description,
+  .movie_details_data {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie_card {
+    height: 480px;
+    margin: 8px;
+    padding-bottom: 10px;
+  }
+
+  .movie_data_rate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .movie_details {
+    height: 50%;
+  }
+
+  .movie_details_heading {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .movie_data_rate,
+  .movie_description,
+  .movie_details_data {
+    font-size: 12px;
+  }
+
+  .movie_description {
+    margin-top: 3px;
+  }
+}

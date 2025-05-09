@@ -1,0 +1,70 @@
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.navbar {
+  height: 80px ;
+  background-color: black ;
+}
+
+
+
+
+
+.navbar {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.active-link {
+  color: #f44336 !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item button {
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-item button:hover {
+  transform: scale(1.1);
+  color: #f44336;
+}
+
+
+@media (max-width: 1000px) {
+      .navbar {
+    height: fit-content ;
+      background-color: black ;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item button {
+    font-size: 16px;
+  }
+    .navbar {
+    height: fit-content ;
+      background-color: black ;
+  }
+}
+
