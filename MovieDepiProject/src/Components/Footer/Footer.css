@@ -1,0 +1,60 @@
+/* Footer Responsive Styles */
+footer {
+    padding: 30px 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #dc3545 !important;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-icon:hover {
+    transform: scale(1.2);
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .list-unstyled li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    footer .list-unstyled {
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+    }
+
+    footer .list-unstyled li {
+        margin-bottom: 8px;
+    }
+
+    footer .social-icons {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,62 @@
+.filter-btn {
+  border-width: 2px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 transparent;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.7);
+}
+
+.search-input {
+  transition: all 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+}
+
+.search-input:hover,
+.search-input:focus {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.6);
+  background-color: #1a1a1a;
+}
+
+.btn-danger,
+.btn-outline-light {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b;
+  box-shadow: 0 0 15px rgba(220, 53, 69, 0.8);
+  transform: scale(1.05);
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.card {
+  background-color: #111;
+  border: 1px solid #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(220, 53, 69, 0.4);
+}
+
+/* الهيدر */
+h2.display-5 {
+  text-shadow: 2px 2px 8px rgba(220, 53, 69, 0.6);
+}

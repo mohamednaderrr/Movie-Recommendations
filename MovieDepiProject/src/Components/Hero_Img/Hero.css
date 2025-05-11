@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Hero {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.7) 30%,
+            rgba(0, 0, 0, 0.4) 60%,
+            rgba(0, 0, 0, 0.3) 100%);
+    z-index: 1;
+}
+
+.loading {
+    height: 650px;
+}
+
+.trailer-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 900px;
+    height: 500px;
+    z-index: 10;
+    display: block;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+.overlay {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.85); */
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.info-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+}
+
+.movie-stat {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    padding: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Hero .title {
+    color: white;
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.Hero .desc {
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+
+
+.buttons .play,
+.info {
+    margin-top: 2px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .Hero {
+        height: 650px;
+    }
+
+    .Hero .title {
+        font-size: 48px;
+    }
+
+    .Hero .desc {
+        width: 70%;
+    }
+
+    .trailer-iframe {
+        height: 400px;
+        width: 90%;
+    }
+
+    .hero-gradient-overlay {
+        background: linear-gradient(to right,
+                rgba(0, 0, 0, 0.9) 0%,
+                rgba(0, 0, 0, 0.8) 40%,
+                rgba(0, 0, 0, 0.6) 70%,
+                rgba(0, 0, 0, 0.5) 100%);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Hero {
+        height: 600px;
+        background-position: center center;
+    }
+
+    .Hero .title {
+        font-size: 42px;
+    }
+
+    .Hero .desc {
+        width: 85%;
+    }
+
+    .hero-gradient-overlay {
+        background: linear-gradient(to right,
+                rgba(0, 0, 0, 0.9) 0%,
+                rgba(0, 0, 0, 0.8) 50%,
+                rgba(0, 0, 0, 0.7) 100%);
+    }
+
+    .movie-stat {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Hero {
+        height: 550px;
+    }
+
+    .Hero .title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .Hero .desc {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero-gradient-overlay {
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.6) 0%,
+                rgba(0, 0, 0, 0.8) 50%,
+                rgba(0, 0, 0, 0.9) 100%);
+    }
+
+    .rating {
+        gap: 10px;
+    }
+
+    .trailer-iframe {
+        height: 350px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Hero {
+        height: 500px;
+    }
+
+    .Hero .title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .Hero .desc {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .trailer-iframe {
+        height: 250px;
+        width: 95%;
+    }
+
+    .movie-stat {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .rating {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Hero {
+        height: 450px;
+    }
+
+    .Hero .title {
+        font-size: 26px;
+    }
+
+    .Hero .desc {
+        font-size: 12px;
+    }
+
+    .trailer-iframe {
+        height: 200px;
+        width: 95%;
+    }
+
+    .info-top {
+        gap: 8px;
+    }
+}

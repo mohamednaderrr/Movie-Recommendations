@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar .logo {
+    width: 120px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right .icon {
+    cursor: pointer;
+}
+
+.right img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.right .profile {
+    position: relative;
+}
+
+.right .profile .options {
+    display: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.right .profile span {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.right .profile span:hover {
+    background-color: #2a2a2a;
+}
+
+.right .profile:hover .options {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 28px;
+    left: -20px;
+}
+.links{
+    margin-top: 11px;
+}
+.links .link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.links .link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.links .link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff0000, #820000);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.links .link:hover::after {
+    width: 100%;
+}
+
+/* Active link styles */
+.links .link.active {
+    color: #ff0000;
+    font-weight: 600;
+    transform: translateY(-2px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.links .link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff0000, #820000);
+    border-radius: 2px;
+    animation: pulse 1.5s infinite;
+}
+
+.links .link.active::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #ff0000;
+    opacity: 0;
+    animation: fadeInDown 0.5s forwards 0.2s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(255, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
+.up{
+    position: relative;
+}
+
+
+
+.navbar-toggler {
+    color: white !important;
+    background-color: white !important;
+    background: transparent;
+    border-radius: 4px;
+    padding: 2px 8px !important;
+}
+
+.navbar-toggler:focus {
+    border: none !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Small Menu */
+.offcanvas {
+    /* height: 450px; */
+    height: fit-content;
+}
+
+.navbar .logout{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px
+}
+
+.navbar .logout .person{
+    transition: 0.5s ease-in-out;
+}
+
+.navbar .logout:hover .person{
+    transform: translateX(17px);
+}
+
+.counterwatchlist{
+    color: white;
+    right: -19px ;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.counterwatchlist.added {
+    background-color: #28a745;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar .logo {
+        width: 100px;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links .link {
+        margin-bottom: 15px;
+        padding: 8px 0;
+    }
+
+    .links .link::after {
+        bottom: 0;
+    }
+
+    .links .link.active {
+        transform: translateY(0);
+    }
+
+    .links .link.active::after {
+        height: 3px;
+    }
+
+    .links .link.active::before {
+        display: none;
+    }
+
+    .right {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar .logo {
+        width: 90px;
+    }
+
+    .offcanvas {
+        width: 80% !important;
+        max-width: 300px;
+        height: fit-content;
+    }
+
+    .links .link {
+        font-size: 15px;
+        padding: 6px 0;
+    }
+
+    .links .link.active {
+        font-weight: 700;
+    }
+
+    .links .link.active::after {
+        height: 2px;
+    }
+
+    .navbar .logout{
+        width: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .navbar .logout .person{
+        transition: 0.5s ease-in-out;
+    }
+
+    .navbar .logout:hover .person{
+        transform: translateX(17px);
+    }
+
+    .counterwatchlist {
+        right: -15px;
+        top: -10px;
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+    }
+}
