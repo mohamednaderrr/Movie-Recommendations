@@ -1,0 +1,139 @@
+.movie_card {
+  width: 320px;  /* زيادة العرض */
+  height: 480px; /* زيادة الارتفاع */
+  margin: 30px;  /* زيادة المسافة بين البطاقات */
+  overflow: hidden;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie_card:hover {
+  transform: scale(1.05); /* تعديل الحجم بشكل طفيف */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.movie_poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie_details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.1));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  text-align: center;
+}
+
+.movie_card:hover .movie_details {
+  opacity: 1;
+}
+
+.movie_details_heading {
+  font-size: 18px; /* تقليل حجم الخط */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.movie_details_data {
+  font-size: 14px; /* تقليل حجم الخط */
+  color: #eee;
+}
+
+.movie_data_rate {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px; /* تقليل حجم الخط */
+  font-weight: 600;
+  margin: 6px 0;
+  color: gold;
+}
+
+.movie_description {
+  font-size: 12px; /* تقليل حجم الخط */
+  font-style: italic;
+  color: #ccc;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px) {
+  .movie_card {
+    width: 300px; /* زيادة العرض قليلاً */
+    height: 450px; /* زيادة الارتفاع قليلاً */
+  }
+}
+
+@media (max-width: 768px) {
+  .movie_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عرض بطاقتين في صف واحد */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .movie_card {
+    width: 100%;
+    height: 340px;
+    margin: 10px;
+  }
+
+  .movie_details {
+    padding: 8px;
+    height: 50%;
+  }
+
+  .movie_details_heading {
+    font-size: 16px;
+  }
+
+  .movie_data_rate,
+  .movie_description,
+  .movie_details_data {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    padding: 5px;
+  }
+
+  .movie_card {
+    width: 100%;
+    height: 600px;
+    margin: 5px;
+  }
+
+  .movie_details_heading {
+    font-size: 15px;
+  }
+
+  .movie_data_rate,
+  .movie_description,
+  .movie_details_data {
+    font-size: 12px;
+  }
+}
