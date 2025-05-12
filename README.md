@@ -86,11 +86,11 @@ Introduce multi-language support.
 Build a personalized recommendation engine.
 
 ## 🤝 Contributors
-Mohamed Nader Rashad
-Mahmoud Baligh Mahmoud
-Helmy Mohamed Elnahans
-Mohamed ElShahat Mohamed
-Ziad Emad AbdelFatah
+-Mohamed Nader Rashad
+-Mahmoud Baligh Mahmoud
+-Helmy Mohamed Elnahans
+-Mohamed ElShahat Mohamed
+-Ziad Emad AbdelFatah
 
 ## 📜 License
 This project is licensed under the MIT License.
