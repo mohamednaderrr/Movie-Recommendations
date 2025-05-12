@@ -1,4 +1,4 @@
-# 🎬 Movie Recommendations
+# 🎬 ReelPath Movies Website
 
 A modern and responsive movie web application built with **React**. This app allows users to browse, search, and explore movies using real-time data from the [TMDB API](https://www.themoviedb.org/). Users can view trending, top-rated, and popular films, add them to a personal Watchlist, and explore detailed information about each movie.
 
