@@ -69,6 +69,7 @@ Ensured responsiveness and styling using Bootstrap.
 Built a functioning watchlist with persistent state handling.
 
 Implemented form validation for login and contact pages.
+---
 
 ## 🌱 Future Enhancements
 Add backend authentication and user account system.
@@ -85,12 +86,17 @@ Introduce multi-language support.
 
 Build a personalized recommendation engine.
 
+---
+
 ## 🤝 Contributors
--Mohamed Nader Rashad
--Mahmoud Baligh Mahmoud
--Helmy Mohamed Elnahans
--Mohamed ElShahat Mohamed
--Ziad Emad AbdelFatah
+
+- Mohamed Nader Rashad  
+- Mahmoud Baligh Mahmoud  
+- Helmy Mohamed Elnahans  
+- Mohamed ElShahat Mohamed  
+- Ziad Emad AbdelFatah
+---
+
 
 ## 📜 License
 This project is licensed under the MIT License.
