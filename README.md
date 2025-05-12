@@ -59,7 +59,7 @@ VITE_TMDB_API_KEY=your_tmdb_api_key_here
 Run the app locally:
 npm run dev
 
-🧠 Overcoming Development Challenges
+## 🧠 Overcoming Development Challenges
 Managed complex routing between multiple pages using React Router.
 
 Fetched and rendered dynamic movie data from TMDB API using Axios.
@@ -70,7 +70,7 @@ Built a functioning watchlist with persistent state handling.
 
 Implemented form validation for login and contact pages.
 
-##🌱 Future Enhancements
+## 🌱 Future Enhancements
 Add backend authentication and user account system.
 
 Save Watchlist data permanently using local storage or a database.
@@ -85,13 +85,13 @@ Introduce multi-language support.
 
 Build a personalized recommendation engine.
 
-##🤝 Contributors
+## 🤝 Contributors
 Mohamed Nader Rashad
 Mahmoud Baligh Mahmoud
 Helmy Mohamed Elnahans
 Mohamed ElShahat Mohamed
 Ziad Emad AbdelFatah
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 
